@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\CoinPickupScript.cs" />
     <Compile Include="Assets\Scripts\DestroyFinishedParticle.cs" />
     <Compile Include="Assets\Scripts\DestroyObjectOverTime.cs" />
+    <Compile Include="Assets\Scripts\EnemyBulletControl.cs" />
     <Compile Include="Assets\Scripts\EnemyHealthManager.cs" />
     <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
     <Compile Include="Assets\Scripts\HealthManager.cs" />
@@ -79,10 +80,14 @@
     <Compile Include="Assets\Scripts\HurtPlayer.cs" />
     <Compile Include="Assets\Scripts\Kill_Player.cs" />
     <Compile Include="Assets\Scripts\LevelLoader.cs" />
+    <Compile Include="Assets\Scripts\LevelSelect.cs" />
     <Compile Include="Assets\Scripts\Level_Manager.cs" />
+    <Compile Include="Assets\Scripts\LifePickUp.cs" />
+    <Compile Include="Assets\Scripts\LivesManager.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\ShootAtPlayer.cs" />
     <Compile Include="Assets\Scripts\bulletcontroller.cs" />
     <Compile Include="Assets\Scripts\movingPlatformScript.cs" />
   </ItemGroup>

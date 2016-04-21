@@ -14,12 +14,16 @@ public class Pause : MonoBehaviour
     {
         if (isPaused)
         {
+            
             pausemenucanvas.SetActive(true);
+            AudioListener.pause = true;
             Time.timeScale = 0f;
         }
         else
         {
             pausemenucanvas.SetActive(false);
+            AudioListener.pause = false;
+            // AudioListener.volume = 1;
             Time.timeScale = 1f;
         }
 

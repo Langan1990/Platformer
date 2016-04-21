@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class LevelLoader : MonoBehaviour {
 	void Update () {
 	    if(Input.GetKeyDown(KeyCode.W) && playerinZone)
         {
-            Application.LoadLevel(levelToLoad);
+            SceneManager.LoadScene(levelToLoad);
         }
 	}
 
