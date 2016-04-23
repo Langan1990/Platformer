@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 98d416961194bb84c9620d8a43f85aec
-timeCreated: 1461080638
+timeCreated: 1461434058
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,9 @@ TextureImporter:
     21300006: cat1
     21300008: cat2
     21300010: cat3
+    21300012: mouse1
+    21300014: mouse2
+    21300016: mouse3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -118,6 +121,39 @@ TextureImporter:
         y: 192
         width: 30
         height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mouse1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 160
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mouse2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 160
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: mouse3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 160
+        width: 29
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

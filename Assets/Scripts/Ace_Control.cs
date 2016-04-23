@@ -76,7 +76,7 @@ public class Ace_Control : MonoBehaviour {
 		}
 
 
-        if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0))//if statement for moving right
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetMouseButtonDown(0)) //if statement for moving right
         {
             
             Instantiate(bullet, firepoint.position, firepoint.rotation);

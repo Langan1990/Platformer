@@ -4,11 +4,22 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LivesManager : MonoBehaviour {
-   // public int startinglives;
+    // public int startinglives;
+
+
+    public static int score;
+    
+    public static int highScoreDisplay;
 
     private int livesCounter;
     private Text text;
     public GameObject gameOverScreen;
+
+
+    public Text HighScoreCount;
+    public Text ScoreCount;
+
+
 
     public Ace_Control player;
 
@@ -36,6 +47,16 @@ public class LivesManager : MonoBehaviour {
 
         if (gameOverScreen.activeSelf)
         {
+            score = PlayerPrefs.GetInt("CurrentScore");
+            int highscore = PlayerPrefs.GetInt("HighScore");
+            if(score > highscore)
+            {
+                highscore = score;
+            }
+            PlayerPrefs.SetInt("HighScore", highscore);
+            highScoreDisplay = PlayerPrefs.GetInt("HighScore");
+            HighScoreCount.text = "" + highScoreDisplay;
+            ScoreCount.text = "" + score;
             waitAfterGameOver -= Time.deltaTime;
         }
 
