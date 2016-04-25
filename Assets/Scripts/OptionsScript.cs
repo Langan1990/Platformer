@@ -26,6 +26,7 @@ public class OptionsScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         musicSlider.value = PlayerPrefs.GetFloat("Music Slider", musicSlider.value);
+        brightnessSlider.value = PlayerPrefs.GetFloat("Brightness Level", brightnessSlider.value);
     }
 
 
@@ -37,6 +38,13 @@ public class OptionsScript : MonoBehaviour {
        
     }
 
+    public void BrightnessSlider()
+    {
+        brightnesslevel = brightnessSlider.value;//sets the volume variable to be the same as the slider
+        PlayerPrefs.SetFloat("Brightness Slider", brightnessSlider.value);//sets the value of the slider
+     //   AudioListener.volume = musicvolume;
+
+    }
 
     // Update is called once per frame
     void Update () {
@@ -44,12 +52,12 @@ public class OptionsScript : MonoBehaviour {
 	}
 
 
-    public void MainMenu()
+    public void MainMenu()//FUNCTION TO CHANGE SCENE
     {
         SceneManager.LoadScene(mainmenu);
     }
     public void Credits()
     {
-        SceneManager.LoadScene(credits);
+        SceneManager.LoadScene(credits);//FUNCTION TO CHANGE SCENE
     }
 }

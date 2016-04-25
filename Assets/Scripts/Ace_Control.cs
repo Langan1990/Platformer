@@ -48,14 +48,13 @@ public class Ace_Control : MonoBehaviour {
 		if (ground && Input.GetKeyDown (KeyCode.Space)) //if satatement for jumping
 		{
 			a.SetBool("Ground", false);
-			//GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 			Jump ();
 		}
 
 		if (!doubleJump && !ground && Input.GetKeyDown (KeyCode.Space))//if statement for doublejumping
 		{
 			a.SetBool("Ground", false);
-			//GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
+			
 			Jump ();
 			doubleJump = true;
 		}
@@ -64,13 +63,13 @@ public class Ace_Control : MonoBehaviour {
 
 		if (Input.GetKey (KeyCode.A))//if statement for moving left
 		{
-			//GetComponent<Rigidbody2D>().velocity = new Vector2(-maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			
 			moveVelocity = -maxSpeed;
 		}
 
 		if (Input.GetKey (KeyCode.D))//if statement for moving right
 		{
-			//GetComponent<Rigidbody2D>().velocity = new Vector2(maxSpeed, GetComponent<Rigidbody2D>().velocity.y);
+			
 			moveVelocity = maxSpeed;
 			
 		}

@@ -39,7 +39,13 @@ public class bulletcontroller : MonoBehaviour {
 
 
         }
-        Instantiate(bullethit, transform.position, transform.rotation);
+
+        if (other.tag == "Boss")
+        {
+            other.GetComponent<BossHealth>().giveDamage(damagetoGive);
+        }
+
+            Instantiate(bullethit, transform.position, transform.rotation);
         Destroy(gameObject);
 
     }
